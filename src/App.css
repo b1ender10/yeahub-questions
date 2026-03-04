@@ -1,0 +1,120 @@
+body {
+  background-color: var(--color-page-bg);
+}
+
+#root {
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  width: 1220px;
+  margin: auto;
+}
+
+.block1,
+.block2 {
+  background: var(--color-card-bg);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.block1 {
+  /* flex-basis: 70%; */
+}
+
+.block1 .title {
+  font-size: var(--fs-title-lg);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.block1 .questions .question .title {
+  display: flex;
+  align-items: center;
+}
+
+.block1 .questions .question .title .decorator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5533FF;
+  margin-right: 8px;
+}
+
+.block1 .questions .question .info {
+  display: flex;
+  gap: 8px;
+}
+
+.block1 .questions .question .info .info-element {
+  background: lightgray;
+  padding: 4px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.block1 .questions .question .info .info-element span {
+  background: #5533FF;
+  color: #fff;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.block2 {
+  /* flex-basis: 30%; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block2 .search {
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 68px;
+  padding: 12px;
+}
+
+.block2 .search input {
+  border: none;
+}
+
+.block2 .block .title {
+  font-size: var(--fs-label-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-tight);
+  margin-bottom: 8px;
+}
+
+.block2 .block .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.block2 .block .list div {
+  font-size: var(--fs-chip);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.block2 .block .list .active {
+  border: 1px solid var(--color-border-primary);
+}
+
+.block2 .block .more {
+  padding: 0;
+  background: none;
+  color: var(--color-link-primary);
+  text-decoration: underline;
+  font-size: var(--fs-label-sm);
+  font-weight: var(--fw-regular);
+}

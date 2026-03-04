@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --color-page-bg: #F4F4F4;
+  --color-card-bg: #FFFFFF;
+  --color-border-subtle: #E8E8E8;
+  --color-border-strong: #BABABA;
+  --color-border-primary: #6A0BFF;
+  --color-link-primary: #5509CC;
+
+  /* typography */
+  --fs-title-lg: 24px;
+  --fs-label-sm: 14px;
+  --fs-chip: 16px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  --lh-tight: 1.2;
+}
+
