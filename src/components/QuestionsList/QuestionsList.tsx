@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Question from "../Question/Question"
-import type { QuestionT } from "../../App";
+import type { QuestionT } from "../../pages/Questions";
+
 
 export default function({questions, changePage, currentPage, maxPage}: {questions: QuestionT[], changePage: (page: number) => void, currentPage: number, maxPage: number}) {
 

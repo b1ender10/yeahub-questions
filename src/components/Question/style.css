@@ -1,3 +1,7 @@
+.question {
+    cursor: pointer;
+}
+
 .close {
     display: none;
 }
